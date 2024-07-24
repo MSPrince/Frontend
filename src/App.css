@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+.active{
+    @apply text-orange-500 underline underline-offset-8
+}
+.pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style-type: none;
+    margin: 20px 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+.pagination li {
+    margin: 0 5px;
+}
+
+.pagination a,
+.pagination button {
+    padding: 10px 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    text-decoration: none;
+    color: #333;
+    background-color: #fff;
+    transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+    cursor: pointer;
+}
+
+.pagination a:hover,
+.pagination button:hover {
+    background-color: #f2f2f2;
+    border-color: #999;
+}
+
+.pagination li.activePagination a {
+    background-color: #ff6a00;
+    color: #fff;
+    border-color: #ff6a00;
+}
+
+.pagination button {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    color: #333;
+}
+
+.pagination button:disabled {
+    cursor: not-allowed;
+    opacity: 0.5;
+    background-color: #e6e6e6;
+    color: #999;
+}
+
+.pagination button:disabled:hover {
+    background-color: #e6e6e6;
+    border-color: #ccc;
+}
+
+.pagination button:not(:disabled):hover {
+    background-color: #f2f2f2;
+    border-color: #999;
+}
+
+.pagination button.previous,
+.pagination button.next {
+    font-weight: bold;
+}
+
+
+.active-button{
+    color: #fc3c1a;
+}
